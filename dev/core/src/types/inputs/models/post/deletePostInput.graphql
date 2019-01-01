@@ -1,0 +1,3 @@
+input DeletePostInput {
+  id: ID!
+}

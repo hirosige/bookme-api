@@ -1,0 +1,11 @@
+input CreateHotelPhotoInput {
+  cdnUrl: String!
+  count: Int!
+  isImage: Boolean!
+  isStored: Boolean!
+  name: String!
+  size: Int!
+  uuid: String!
+  hotelId: ID
+  hotel: HotelPhotohotelHotel
+}

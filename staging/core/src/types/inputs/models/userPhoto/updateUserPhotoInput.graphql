@@ -1,0 +1,12 @@
+input UpdateUserPhotoInput {
+  cdnUrl: String
+  id: ID!
+  isImage: Boolean
+  isStored: Boolean
+  mimeType: String
+  name: String
+  size: Int
+  uuid: String
+  userId: ID
+  user: UserPhotouserUser
+}

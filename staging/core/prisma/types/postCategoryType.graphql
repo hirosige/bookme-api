@@ -1,0 +1,11 @@
+type PostCategory {
+  id: ID! @unique
+  name: String! @unique
+  isRoot: Boolean!
+
+  posts: [Post!]!
+  children: [PostCategory!]!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

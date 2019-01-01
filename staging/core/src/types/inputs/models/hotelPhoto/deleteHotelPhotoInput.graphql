@@ -1,0 +1,3 @@
+input DeleteHotelPhotoInput {
+  id: ID!
+}

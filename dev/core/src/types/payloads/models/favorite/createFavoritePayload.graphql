@@ -1,0 +1,8 @@
+type CreateFavoritePayload {
+  id: ID!
+
+  user: User!
+  hotels: Hotel!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

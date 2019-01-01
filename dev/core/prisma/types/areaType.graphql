@@ -1,0 +1,12 @@
+type Area {
+  id: ID! @unique
+  name: String! @unique
+  code: String! @unique
+  slug: String! @unique
+
+  country: Country!
+  hotels: [Hotel!]!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

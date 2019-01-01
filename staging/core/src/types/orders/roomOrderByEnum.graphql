@@ -1,0 +1,16 @@
+enum RoomOrderBy {
+  createdAt_ASC
+  createdAt_DESC
+  id_ASC
+  id_DESC
+  name_ASC
+  name_DESC
+  people_ASC
+  people_DESC
+  price_ASC
+  price_DESC
+  roomType_ASC
+  roomType_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+}

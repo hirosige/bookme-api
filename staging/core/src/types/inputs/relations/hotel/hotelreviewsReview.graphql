@@ -1,0 +1,6 @@
+input HotelreviewsReview {
+  description: String!
+  rating: Float!
+  userId: ID
+  user: ReviewuserUser
+}

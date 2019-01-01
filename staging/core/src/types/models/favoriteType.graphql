@@ -1,0 +1,39 @@
+type Favorite implements Node {
+  id: ID!
+
+  user: User!
+  hotels: Hotel!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allFavorites(
+    filter: FavoriteFilter,
+    orderBy: FavoriteOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [Favorite]!
+
+  Favorite(id: ID): Favorite
+
+  _allFavoritesMeta(
+    filter: FavoriteFilter,
+    orderBy: FavoriteOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createFavorite(input: CreateFavoriteInput!): CreateFavoritePayload
+  updateFavorite(input: UpdateFavoriteInput!): UpdateFavoritePayload
+  deleteFavorite(input: DeleteFavoriteInput!): DeleteFavoritePayload
+}

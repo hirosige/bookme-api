@@ -1,0 +1,10 @@
+input CreateContactInput {
+  description: String!
+  email: String!
+  isReplied: Boolean
+  name: String!
+  reference: String
+  replyMessage: String
+  tel: String!
+  title: String!
+}

@@ -1,0 +1,45 @@
+type Post implements Node {
+  id: ID!
+  title: String!
+  mdContents: String!
+
+  author: User!
+  category: PostCategory
+  tags: [Tag!]!
+
+  hero: PostHero
+  photos: PostPhotos
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allPosts(
+    filter: PostFilter,
+    orderBy: PostOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [Post!]!
+
+  Post(id: ID, title: String): Post
+
+  _allPostsMeta(
+    filter: PostFilter,
+    orderBy: PostOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createPost(input: CreatePostInput!): CreatePostPayload
+  updatePost(input: UpdatePostInput!): UpdatePostPayload
+  deletePost(input: DeletePostInput!): DeletePostPayload
+}

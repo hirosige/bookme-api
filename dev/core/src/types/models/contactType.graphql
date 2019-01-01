@@ -1,0 +1,44 @@
+type Contact {
+  id: ID!
+  name: String!
+  email: String!
+  tel: String!
+  title: String!
+  reference: String
+  description: String!
+  isReplied: Boolean!
+  replyMessage: String
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allContacts(
+    filter: ContactFilter,
+    orderBy: ContactOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [Contact!]!
+
+  Contact(id: ID): Contact
+
+  _allContactsMeta(
+    filter: ContactFilter,
+    orderBy: ContactOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createContact(input: CreateContactInput!): CreateContactPayload
+  updateContact(input: UpdateContactInput!): UpdateContactPayload
+  deleteContact(input: DeleteContactInput!): DeleteContactPayload
+}

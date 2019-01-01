@@ -1,0 +1,15 @@
+type HotelPhoto {
+  id: ID! @unique
+  name: String!
+  cdnUrl: String!
+  uuid: String!
+  count: Int!
+  isImage: Boolean!
+  isStored: Boolean!
+  size: Int!
+
+  hotel: Hotel
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

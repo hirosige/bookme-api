@@ -1,0 +1,6 @@
+input PosttagsTag {
+  color: String
+  name: String!
+  postsIds: [ID!]
+  posts: [TagpostsPost!]
+}

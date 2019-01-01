@@ -1,0 +1,6 @@
+input CreateTagInput {
+  color: String
+  name: String!
+  postsIds: [ID!]
+  posts: [TagpostsPost!]
+}

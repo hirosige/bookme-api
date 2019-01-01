@@ -1,0 +1,11 @@
+input CreateAdvantageIconInput {
+  cdnUrl: String!
+  isImage: Boolean!
+  isStored: Boolean!
+  mimeType: String!
+  name: String!
+  size: Int!
+  uuid: String!
+  advantageId: ID
+  advantage: AdvantageIconadvantageAdvantage
+}

@@ -1,0 +1,11 @@
+type Advantage {
+  id: ID! @unique
+  name: String! @unique
+  iconName: String!
+
+  icon: AdvantageIcon
+  hotels: [Hotel!]!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

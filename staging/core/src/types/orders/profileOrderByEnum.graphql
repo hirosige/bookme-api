@@ -1,0 +1,20 @@
+enum ProfileOrderBy {
+  address_ASC
+  address_DESC
+  createdAt_ASC
+  createdAt_DESC
+  firstName_ASC
+  firstName_DESC
+  id_ASC
+  id_DESC
+  lastName_ASC
+  lastName_DESC
+  passportNo_ASC
+  passportNo_DESC
+  subscriptionEmail_ASC
+  subscriptionEmail_DESC
+  tel_ASC
+  tel_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+}

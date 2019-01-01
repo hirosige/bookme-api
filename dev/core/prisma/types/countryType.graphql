@@ -1,0 +1,12 @@
+type Country {
+  id: ID! @unique
+  name: String! @unique
+  code: String! @unique
+  slug: String! @unique
+
+  areas: [Area!]!
+  hotels: [Hotel!]!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

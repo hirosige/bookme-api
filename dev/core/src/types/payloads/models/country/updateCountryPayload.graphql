@@ -1,0 +1,10 @@
+type UpdateCountryPayload {
+  id: ID!
+  name: String!
+  code: String!
+  slug: String!
+  areas: [Area!]!
+  hotels: [Hotel!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

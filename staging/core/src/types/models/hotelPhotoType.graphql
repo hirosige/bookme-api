@@ -1,0 +1,44 @@
+type HotelPhoto implements Node {
+  id: ID!
+  name: String!
+  cdnUrl: String!
+  uuid: String!
+  count: Int!
+  isImage: Boolean!
+  isStored: Boolean!
+  size: Int!
+  hotel: Hotel
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allHotelPhotos(
+    filter: HotelPhotoFilter,
+    orderBy: HotelPhotoOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [HotelPhoto]!
+
+  HotelPhoto(id: ID): HotelPhoto
+
+  _allHotelPhotosMeta(
+    filter: HotelPhotoFilter,
+    orderBy: HotelPhotoOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createHotelPhoto(input: CreateHotelPhotoInput!): CreateHotelPhotoPayload
+  updateHotelPhoto(input: UpdateHotelPhotoInput!): UpdateHotelPhotoPayload
+  deleteHotelPhoto(input: DeleteHotelPhotoInput!): DeleteHotelPhotoPayload
+}

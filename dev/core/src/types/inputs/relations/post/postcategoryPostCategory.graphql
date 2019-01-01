@@ -1,0 +1,8 @@
+input PostcategoryPostCategory {
+  isRoot: Boolean!
+  name: String!
+  childrenIds: [ID!]
+  children: [PostCategorychildrenPostCategory!]
+  postsIds: [ID!]
+  posts: [PostCategorypostsPost!]
+}

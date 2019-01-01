@@ -1,0 +1,12 @@
+input UpdateAdvantageIconInput {
+  cdnUrl: String
+  id: ID!
+  isImage: Boolean
+  isStored: Boolean
+  mimeType: String
+  name: String
+  size: Int
+  uuid: String
+  advantageId: ID
+  advantage: AdvantageIconadvantageAdvantage
+}

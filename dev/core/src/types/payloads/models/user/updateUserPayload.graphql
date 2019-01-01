@@ -1,0 +1,17 @@
+type UpdateUserPayload {
+  id: ID!
+  email: String
+  auth0UserId: String
+  omiseCustomerId: String
+  role: ROLE
+
+  avatar: UserPhoto
+  posts: [Post!]!
+  profile: Profile
+  favorites: [Favorite!]!
+
+  bookings: [Booking!]!
+  reviews: [Review!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

@@ -1,0 +1,18 @@
+type User {
+  id: ID! @unique
+  email: String
+  auth0UserId: String @unique
+  omiseCustomerId: String @unique
+  role: ROLE @default(value: USER)
+
+  avatar: UserPhoto
+  posts: [Post!]!
+  profile: Profile
+  favorites: [Favorite!]!
+
+  bookings: [Booking!]!
+  reviews: [Review!]!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

@@ -1,0 +1,3 @@
+input DeleteAreaInput {
+  id: ID!
+}

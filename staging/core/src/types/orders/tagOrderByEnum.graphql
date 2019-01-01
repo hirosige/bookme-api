@@ -1,0 +1,12 @@
+enum TagOrderBy {
+  color_ASC
+  color_DESC
+  createdAt_ASC
+  createdAt_DESC
+  id_ASC
+  id_DESC
+  name_ASC
+  name_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+}

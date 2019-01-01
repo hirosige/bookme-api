@@ -1,0 +1,12 @@
+input PostHeropostPost {
+  mdContents: String!
+  title: String!
+  authorId: ID
+  author: PostauthorUser
+  categoryId: ID
+  category: PostcategoryPostCategory
+  photosId: ID
+  photos: PostphotosPostPhotos
+  tagsIds: [ID!]
+  tags: [PosttagsTag!]
+}

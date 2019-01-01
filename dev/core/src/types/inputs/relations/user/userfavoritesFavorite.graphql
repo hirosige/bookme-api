@@ -1,0 +1,4 @@
+input UserfavoritesFavorite {
+  hotelsId: ID
+  hotels: FavoritehotelsHotel
+}

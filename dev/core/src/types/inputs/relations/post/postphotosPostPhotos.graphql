@@ -1,0 +1,9 @@
+input PostphotosPostPhotos {
+  cdnUrl: String
+  count: Int
+  isImage: Boolean
+  isStored: Boolean
+  name: String
+  size: Int
+  uuid: String
+}

@@ -1,0 +1,8 @@
+input CreateReviewInput {
+  description: String!
+  rating: Float!
+  hotelId: ID
+  hotel: ReviewhotelHotel
+  userId: ID
+  user: ReviewuserUser
+}

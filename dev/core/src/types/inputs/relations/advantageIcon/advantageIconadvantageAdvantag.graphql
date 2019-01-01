@@ -1,0 +1,6 @@
+input AdvantageIconadvantageAdvantage {
+  iconName: String!
+  name: String!
+  hotelsIds: [ID!]
+  hotels: [AdvantagehotelsHotel!]
+}

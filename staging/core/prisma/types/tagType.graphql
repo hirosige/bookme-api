@@ -1,0 +1,10 @@
+type Tag {
+  id: ID! @unique
+  name: String! @unique
+  color: String! @default(value: "#007bff")
+
+  posts: [Post!]!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

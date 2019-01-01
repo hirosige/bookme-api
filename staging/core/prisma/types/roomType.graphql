@@ -1,0 +1,13 @@
+type Room {
+  id: ID! @unique
+  name: String!
+  roomType: ROOM_TYPE @default(value: SUPERIOR)
+  price: Float
+  people: Int
+
+  photos: [RoomPhoto!]!
+  hotel: Hotel!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

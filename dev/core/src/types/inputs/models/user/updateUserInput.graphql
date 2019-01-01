@@ -1,0 +1,19 @@
+input UpdateUserInput {
+  auth0UserId: String
+  email: String
+  id: ID!
+  omiseCustomerId: String
+  role: ROLE
+  avatarId: ID
+  avatar: UseravatarUserPhoto
+  profileId: ID
+  profile: UserprofileProfile
+  bookingsIds: [ID!]
+  bookings: [UserbookingsBooking!]
+  favoritesIds: [ID!]
+  favorites: [UserfavoritesFavorite!]
+  postsIds: [ID!]
+  posts: [UserpostsPost!]
+  reviewsIds: [ID!]
+  reviews: [UserreviewsReview!]
+}

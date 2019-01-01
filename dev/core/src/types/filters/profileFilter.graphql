@@ -1,0 +1,332 @@
+input ProfileFilter {
+  # Logical AND on all given filters.
+  AND: [ProfileFilter!]
+
+  # Logical OR on all given filters.
+  OR: [ProfileFilter!]
+  address: String
+
+  # All values that are not equal to given value.
+  address_not: String
+
+  # All values that are contained in given list.
+  address_in: [String!]
+
+  # All values that are not contained in given list.
+  address_not_in: [String!]
+
+  # All values less than the given value.
+  address_lt: String
+
+  # All values less than or equal the given value.
+  address_lte: String
+
+  # All values greater than the given value.
+  address_gt: String
+
+  # All values greater than or equal the given value.
+  address_gte: String
+
+  # All values containing the given string.
+  address_contains: String
+
+  # All values not containing the given string.
+  address_not_contains: String
+
+  # All values starting with the given string.
+  address_starts_with: String
+
+  # All values not starting with the given string.
+  address_not_starts_with: String
+
+  # All values ending with the given string.
+  address_ends_with: String
+
+  # All values not ending with the given string.
+  address_not_ends_with: String
+  createdAt: DateTime
+
+  # All values that are not equal to given value.
+  createdAt_not: DateTime
+
+  # All values that are contained in given list.
+  createdAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  createdAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  createdAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  createdAt_lte: DateTime
+
+  # All values greater than the given value.
+  createdAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  createdAt_gte: DateTime
+  firstName: String
+
+  # All values that are not equal to given value.
+  firstName_not: String
+
+  # All values that are contained in given list.
+  firstName_in: [String!]
+
+  # All values that are not contained in given list.
+  firstName_not_in: [String!]
+
+  # All values less than the given value.
+  firstName_lt: String
+
+  # All values less than or equal the given value.
+  firstName_lte: String
+
+  # All values greater than the given value.
+  firstName_gt: String
+
+  # All values greater than or equal the given value.
+  firstName_gte: String
+
+  # All values containing the given string.
+  firstName_contains: String
+
+  # All values not containing the given string.
+  firstName_not_contains: String
+
+  # All values starting with the given string.
+  firstName_starts_with: String
+
+  # All values not starting with the given string.
+  firstName_not_starts_with: String
+
+  # All values ending with the given string.
+  firstName_ends_with: String
+
+  # All values not ending with the given string.
+  firstName_not_ends_with: String
+  id: ID
+
+  # All values that are not equal to given value.
+  id_not: ID
+
+  # All values that are contained in given list.
+  id_in: [ID!]
+
+  # All values that are not contained in given list.
+  id_not_in: [ID!]
+
+  # All values less than the given value.
+  id_lt: ID
+
+  # All values less than or equal the given value.
+  id_lte: ID
+
+  # All values greater than the given value.
+  id_gt: ID
+
+  # All values greater than or equal the given value.
+  id_gte: ID
+
+  # All values containing the given string.
+  id_contains: ID
+
+  # All values not containing the given string.
+  id_not_contains: ID
+
+  # All values starting with the given string.
+  id_starts_with: ID
+
+  # All values not starting with the given string.
+  id_not_starts_with: ID
+
+  # All values ending with the given string.
+  id_ends_with: ID
+
+  # All values not ending with the given string.
+  id_not_ends_with: ID
+  lastName: String
+
+  # All values that are not equal to given value.
+  lastName_not: String
+
+  # All values that are contained in given list.
+  lastName_in: [String!]
+
+  # All values that are not contained in given list.
+  lastName_not_in: [String!]
+
+  # All values less than the given value.
+  lastName_lt: String
+
+  # All values less than or equal the given value.
+  lastName_lte: String
+
+  # All values greater than the given value.
+  lastName_gt: String
+
+  # All values greater than or equal the given value.
+  lastName_gte: String
+
+  # All values containing the given string.
+  lastName_contains: String
+
+  # All values not containing the given string.
+  lastName_not_contains: String
+
+  # All values starting with the given string.
+  lastName_starts_with: String
+
+  # All values not starting with the given string.
+  lastName_not_starts_with: String
+
+  # All values ending with the given string.
+  lastName_ends_with: String
+
+  # All values not ending with the given string.
+  lastName_not_ends_with: String
+  passportNo: String
+
+  # All values that are not equal to given value.
+  passportNo_not: String
+
+  # All values that are contained in given list.
+  passportNo_in: [String!]
+
+  # All values that are not contained in given list.
+  passportNo_not_in: [String!]
+
+  # All values less than the given value.
+  passportNo_lt: String
+
+  # All values less than or equal the given value.
+  passportNo_lte: String
+
+  # All values greater than the given value.
+  passportNo_gt: String
+
+  # All values greater than or equal the given value.
+  passportNo_gte: String
+
+  # All values containing the given string.
+  passportNo_contains: String
+
+  # All values not containing the given string.
+  passportNo_not_contains: String
+
+  # All values starting with the given string.
+  passportNo_starts_with: String
+
+  # All values not starting with the given string.
+  passportNo_not_starts_with: String
+
+  # All values ending with the given string.
+  passportNo_ends_with: String
+
+  # All values not ending with the given string.
+  passportNo_not_ends_with: String
+  subscriptionEmail: String
+
+  # All values that are not equal to given value.
+  subscriptionEmail_not: String
+
+  # All values that are contained in given list.
+  subscriptionEmail_in: [String!]
+
+  # All values that are not contained in given list.
+  subscriptionEmail_not_in: [String!]
+
+  # All values less than the given value.
+  subscriptionEmail_lt: String
+
+  # All values less than or equal the given value.
+  subscriptionEmail_lte: String
+
+  # All values greater than the given value.
+  subscriptionEmail_gt: String
+
+  # All values greater than or equal the given value.
+  subscriptionEmail_gte: String
+
+  # All values containing the given string.
+  subscriptionEmail_contains: String
+
+  # All values not containing the given string.
+  subscriptionEmail_not_contains: String
+
+  # All values starting with the given string.
+  subscriptionEmail_starts_with: String
+
+  # All values not starting with the given string.
+  subscriptionEmail_not_starts_with: String
+
+  # All values ending with the given string.
+  subscriptionEmail_ends_with: String
+
+  # All values not ending with the given string.
+  subscriptionEmail_not_ends_with: String
+  tel: String
+
+  # All values that are not equal to given value.
+  tel_not: String
+
+  # All values that are contained in given list.
+  tel_in: [String!]
+
+  # All values that are not contained in given list.
+  tel_not_in: [String!]
+
+  # All values less than the given value.
+  tel_lt: String
+
+  # All values less than or equal the given value.
+  tel_lte: String
+
+  # All values greater than the given value.
+  tel_gt: String
+
+  # All values greater than or equal the given value.
+  tel_gte: String
+
+  # All values containing the given string.
+  tel_contains: String
+
+  # All values not containing the given string.
+  tel_not_contains: String
+
+  # All values starting with the given string.
+  tel_starts_with: String
+
+  # All values not starting with the given string.
+  tel_not_starts_with: String
+
+  # All values ending with the given string.
+  tel_ends_with: String
+
+  # All values not ending with the given string.
+  tel_not_ends_with: String
+  updatedAt: DateTime
+
+  # All values that are not equal to given value.
+  updatedAt_not: DateTime
+
+  # All values that are contained in given list.
+  updatedAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  updatedAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  updatedAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  updatedAt_lte: DateTime
+
+  # All values greater than the given value.
+  updatedAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  updatedAt_gte: DateTime
+  user: UserFilter
+}

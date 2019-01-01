@@ -1,0 +1,22 @@
+enum AdvantageIconOrderBy {
+  cdnUrl_ASC
+  cdnUrl_DESC
+  createdAt_ASC
+  createdAt_DESC
+  id_ASC
+  id_DESC
+  isImage_ASC
+  isImage_DESC
+  isStored_ASC
+  isStored_DESC
+  mimeType_ASC
+  mimeType_DESC
+  name_ASC
+  name_DESC
+  size_ASC
+  size_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+  uuid_ASC
+  uuid_DESC
+}

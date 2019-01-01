@@ -1,0 +1,14 @@
+type UpdateUserPhotoPayload {
+  id: ID!
+  name: String!
+  cdnUrl: String!
+  uuid: String!
+  isImage: Boolean!
+  isStored: Boolean!
+  mimeType: String!
+  size: Int!
+
+  user: User!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

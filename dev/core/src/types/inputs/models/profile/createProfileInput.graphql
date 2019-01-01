@@ -1,0 +1,10 @@
+input CreateProfileInput {
+  address: String
+  firstName: String
+  lastName: String
+  passportNo: String!
+  subscriptionEmail: String
+  tel: String
+  userId: ID
+  user: ProfileuserUser
+}

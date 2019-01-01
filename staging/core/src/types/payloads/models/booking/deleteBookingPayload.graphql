@@ -1,0 +1,15 @@
+type DeleteBookingPayload {
+  id: ID!
+  isPaid: Boolean!
+  isConfirmed: Boolean!
+  checkIn: DateTime!
+  checkOut: DateTime!
+  qty: Int!
+  nights: Int!
+  totalAmount: Int!
+
+  hotel: Hotel!
+  user: User!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

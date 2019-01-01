@@ -1,0 +1,32 @@
+endpoint: http://localhost:4466
+datamodel:
+  - core/prisma/types/advantageIconType.graphql
+  - core/prisma/types/advantageType.graphql
+  - core/prisma/types/areaType.graphql
+  - core/prisma/types/bookingType.graphql
+  - core/prisma/types/contactType.graphql
+  - core/prisma/types/countryType.graphql
+  - core/prisma/types/favoriteType.graphql
+  - core/prisma/types/hotelPhotoType.graphql
+  - core/prisma/types/hotelType.graphql
+  - core/prisma/types/postCategoryType.graphql
+  - core/prisma/types/postHeroType.graphql
+  - core/prisma/types/postPhotosType.graphql
+  - core/prisma/types/postType.graphql
+  - core/prisma/types/profileType.graphql
+  - core/prisma/types/reviewType.graphql
+  - core/prisma/types/roomPhotosType.graphql
+  - core/prisma/types/roomType.graphql
+  - core/prisma/types/tagType.graphql
+  - core/prisma/types/userPhotoType.graphql
+  - core/prisma/types/userType.graphql
+  - core/prisma/enums/roleEnum.graphql
+  - core/prisma/enums/roomTypeEnum.graphql
+
+generate:
+  - generator: javascript-client
+    output: generated/prisma-client/
+
+hooks:
+  post-deploy:
+    - prisma generate

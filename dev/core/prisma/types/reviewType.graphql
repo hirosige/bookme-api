@@ -1,0 +1,11 @@
+type Review {
+  id: ID! @unique
+  rating: Float!
+  description: String!
+
+  hotel: Hotel!
+  user: User!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

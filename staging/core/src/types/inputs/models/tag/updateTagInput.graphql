@@ -1,0 +1,7 @@
+input UpdateTagInput {
+  color: String
+  id: ID!
+  name: String
+  postsIds: [ID!]
+  posts: [TagpostsPost!]
+}

@@ -1,0 +1,9 @@
+type Favorite {
+  id: ID! @unique
+
+  user: User!
+  hotels: Hotel!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

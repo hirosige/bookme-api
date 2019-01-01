@@ -1,0 +1,41 @@
+type Area implements Node {
+  id: ID!
+  name: String!
+  code: String!
+  slug: String!
+  country: Country!
+  hotels: [Hotel!]!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allAreas(
+    filter: AreaFilter,
+    orderBy: AreaOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [Area!]!
+
+  Area(code: String, id: ID, name: String, slug: String): Area
+
+  _allAreasMeta(
+    filter: AreaFilter,
+    orderBy: AreaOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createArea(input: CreateAreaInput!): CreateAreaPayload
+  updateArea(input: UpdateAreaInput!): UpdateAreaPayload
+  deleteArea(input: DeleteAreaInput!): DeleteAreaPayload
+}

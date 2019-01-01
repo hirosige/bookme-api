@@ -1,0 +1,41 @@
+type PostCategory implements Node {
+  id: ID!
+  name: String!
+  isRoot: Boolean!
+
+  posts: [Post!]!
+  children: [PostCategory!]!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allPostCategories(
+    filter: PostCategoryFilter,
+    orderBy: PostCategoryOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [PostCategory!]!
+
+  PostCategory(id: ID, name: String): PostCategory
+
+  _allPostCategoriesMeta(
+    filter: PostCategoryFilter,
+    orderBy: PostCategoryOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createPostCategory(input: CreatePostCategoryInput!): CreatePostCategoryPayload
+  updatePostCategory(input: UpdatePostCategoryInput!): UpdatePostCategoryPayload
+  deletePostCategory(input: DeletePostCategoryInput!): DeletePostCategoryPayload
+}

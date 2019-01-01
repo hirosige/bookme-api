@@ -1,0 +1,11 @@
+input UpdateContactInput {
+  description: String
+  email: String
+  id: ID!
+  isReplied: Boolean
+  name: String
+  reference: String
+  replyMessage: String
+  tel: String
+  title: String
+}

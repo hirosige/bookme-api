@@ -1,0 +1,14 @@
+type UpdateAdvantageIconPayload {
+  id: ID!
+  name: String!
+  cdnUrl: String!
+  uuid: String!
+  isImage: Boolean!
+  isStored: Boolean!
+  mimeType: String!
+  size: Int!
+
+  advantage: Advantage
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

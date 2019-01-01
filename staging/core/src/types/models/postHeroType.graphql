@@ -1,0 +1,44 @@
+type PostHero implements Node {
+  id: ID!
+  name: String
+  cdnUrl: String
+  uuid: String
+  isImage: Boolean
+  isStored: Boolean
+  mimeType: String
+  size: Int
+  post: Post
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allPostHeroes(
+    filter: PostHeroFilter,
+    orderBy: PostHeroOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [PostHero!]!
+
+  PostHero(id: ID): PostHero
+
+  _allPostHeroesMeta(
+    filter: PostHeroFilter,
+    orderBy: PostHeroOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createPostHero(input: CreatePostHeroInput!): CreatePostHeroPayload
+  updatePostHero(input: UpdatePostHeroInput!): UpdatePostHeroPayload
+  deletePostHero(input: DeletePostHeroInput!): DeletePostHeroPayload
+}

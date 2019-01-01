@@ -1,0 +1,11 @@
+input UserbookingsBooking {
+  checkIn: DateTime!
+  checkOut: DateTime!
+  isConfirmed: Boolean
+  isPaid: Boolean
+  nights: Int!
+  qty: Int!
+  totalAmount: Int!
+  hotelId: ID
+  hotel: BookinghotelHotel
+}

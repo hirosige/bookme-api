@@ -1,0 +1,10 @@
+input UpdateAreaInput {
+  code: String
+  id: ID!
+  name: String
+  slug: String
+  countryId: ID
+  country: AreacountryCountry
+  hotelsIds: [ID!]
+  hotels: [AreahotelsHotel!]
+}

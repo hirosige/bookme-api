@@ -1,0 +1,10 @@
+input RoomPhotoroomRoom {
+  name: String!
+  people: Int
+  price: Float
+  roomType: ROOM_TYPE
+  hotelId: ID
+  hotel: RoomhotelHotel
+  photosIds: [ID!]
+  photos: [RoomphotosRoomPhoto!]
+}

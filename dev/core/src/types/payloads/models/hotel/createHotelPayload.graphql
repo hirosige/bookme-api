@@ -1,0 +1,24 @@
+type CreateHotelPayload {
+  id: ID!
+  name: String!
+  address: String!
+  latitude: Float
+  longitude: Float
+  appliances: String!
+  tel: String!
+  fax: String
+  email: String!
+  isPublished: Boolean!
+
+  country: Country!
+  area: Area!
+  photos: HotelPhoto
+  rooms: [Room!]!
+  favorites: [Favorite!]!
+  advantages: [Advantage!]!
+
+  bookings: [Booking!]!
+  reviews: [Review!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

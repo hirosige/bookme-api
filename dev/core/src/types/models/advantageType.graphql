@@ -1,0 +1,43 @@
+type Advantage implements Node {
+  id: ID!
+  name: String!
+  iconName: String!
+  icon: AdvantageIcon
+  hotels: [Hotel!]!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allAdvantages(
+    filter: AdvantageFilter,
+    orderBy: AdvantageOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): [Advantage!]!
+
+  Advantage(
+    id: ID
+    name: String
+  ): Advantage!
+
+  _allAdvantagesMeta(
+    filter: AdvantageFilter,
+    orderBy: AdvantageOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createAdvantage(input: CreateAdvantageInput!): CreateAdvantagePayload
+  updateAdvantage(input: UpdateAdvantageInput!): UpdateAdvantagePayload
+  deleteAdvantage(input: DeleteAdvantageInput!): DeleteAdvantagePayload
+}

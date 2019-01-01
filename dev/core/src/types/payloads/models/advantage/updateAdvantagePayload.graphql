@@ -1,0 +1,9 @@
+type UpdateAdvantagePayload {
+  id: ID!
+  name: String!
+  iconName: String!
+  icon: AdvantageIcon
+  hotels: [Hotel!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

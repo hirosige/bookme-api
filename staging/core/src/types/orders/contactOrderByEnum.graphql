@@ -1,0 +1,24 @@
+enum ContactOrderBy {
+  createdAt_ASC
+  createdAt_DESC
+  description_ASC
+  description_DESC
+  email_ASC
+  email_DESC
+  id_ASC
+  id_DESC
+  isReplied_ASC
+  isReplied_DESC
+  name_ASC
+  name_DESC
+  reference_ASC
+  reference_DESC
+  replyMessage_ASC
+  replyMessage_DESC
+  tel_ASC
+  tel_DESC
+  title_ASC
+  title_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+}

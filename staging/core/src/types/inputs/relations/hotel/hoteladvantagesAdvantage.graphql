@@ -1,0 +1,8 @@
+input HoteladvantagesAdvantage {
+  iconName: String!
+  name: String!
+  iconId: ID
+  icon: AdvantageiconAdvantageIcon
+  hotelsIds: [ID!]
+  hotels: [AdvantagehotelsHotel!]
+}

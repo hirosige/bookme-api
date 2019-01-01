@@ -1,0 +1,25 @@
+type Hotel {
+  id: ID! @unique
+  name: String! @unique
+  address: String!
+  latitude: Float
+  longitude: Float
+  appliances: String!
+  tel: String!
+  fax: String
+  email: String!
+  isPublished: Boolean! @default(value: "false")
+
+  country: Country!
+  area: Area!
+  photos: HotelPhoto
+  rooms: [Room!]!
+  favorites: [Favorite!]!
+  advantages: [Advantage!]!
+
+  bookings: [Booking!]!
+  reviews: [Review!]!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

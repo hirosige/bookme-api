@@ -1,0 +1,45 @@
+type UserPhoto implements Node {
+  id: ID!
+  name: String!
+  cdnUrl: String!
+  uuid: String!
+  isImage: Boolean!
+  isStored: Boolean!
+  mimeType: String!
+  size: Int!
+
+  user: User!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allUserPhotos(
+    filter: UserPhotoFilter,
+    orderBy: UserPhotoOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [UserPhoto!]!
+
+  UserPhoto(id: ID): UserPhoto
+
+  _allUserPhotosMeta(
+    filter: UserPhotoFilter,
+    orderBy: UserPhotoOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createUserPhoto(input: CreateUserPhotoInput!): CreateUserPhotoPayload
+  updateUserPhoto(input: UpdateUserPhotoInput!): UpdateUserPhotoPayload
+  deleteUserPhoto(input: DeleteUserPhotoInput!): DeleteUserPhotoPayload
+}

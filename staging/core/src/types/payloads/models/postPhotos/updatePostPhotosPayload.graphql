@@ -1,0 +1,14 @@
+type UpdatePostPhotosPayload {
+  id: ID!
+  name: String
+  cdnUrl: String
+  uuid: String
+  count: Int
+  isImage: Boolean
+  isStored: Boolean
+  size: Int
+
+  post: Post
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

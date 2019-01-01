@@ -1,0 +1,211 @@
+input BookingFilter {
+  # Logical AND on all given filters.
+  AND: [BookingFilter!]
+
+  # Logical OR on all given filters.
+  OR: [BookingFilter!]
+  checkIn: DateTime
+
+  # All values that are not equal to given value.
+  checkIn_not: DateTime
+
+  # All values that are contained in given list.
+  checkIn_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  checkIn_not_in: [DateTime!]
+
+  # All values less than the given value.
+  checkIn_lt: DateTime
+
+  # All values less than or equal the given value.
+  checkIn_lte: DateTime
+
+  # All values greater than the given value.
+  checkIn_gt: DateTime
+
+  # All values greater than or equal the given value.
+  checkIn_gte: DateTime
+  checkOut: DateTime
+
+  # All values that are not equal to given value.
+  checkOut_not: DateTime
+
+  # All values that are contained in given list.
+  checkOut_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  checkOut_not_in: [DateTime!]
+
+  # All values less than the given value.
+  checkOut_lt: DateTime
+
+  # All values less than or equal the given value.
+  checkOut_lte: DateTime
+
+  # All values greater than the given value.
+  checkOut_gt: DateTime
+
+  # All values greater than or equal the given value.
+  checkOut_gte: DateTime
+  createdAt: DateTime
+
+  # All values that are not equal to given value.
+  createdAt_not: DateTime
+
+  # All values that are contained in given list.
+  createdAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  createdAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  createdAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  createdAt_lte: DateTime
+
+  # All values greater than the given value.
+  createdAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  createdAt_gte: DateTime
+  id: ID
+
+  # All values that are not equal to given value.
+  id_not: ID
+
+  # All values that are contained in given list.
+  id_in: [ID!]
+
+  # All values that are not contained in given list.
+  id_not_in: [ID!]
+
+  # All values less than the given value.
+  id_lt: ID
+
+  # All values less than or equal the given value.
+  id_lte: ID
+
+  # All values greater than the given value.
+  id_gt: ID
+
+  # All values greater than or equal the given value.
+  id_gte: ID
+
+  # All values containing the given string.
+  id_contains: ID
+
+  # All values not containing the given string.
+  id_not_contains: ID
+
+  # All values starting with the given string.
+  id_starts_with: ID
+
+  # All values not starting with the given string.
+  id_not_starts_with: ID
+
+  # All values ending with the given string.
+  id_ends_with: ID
+
+  # All values not ending with the given string.
+  id_not_ends_with: ID
+  isConfirmed: Boolean
+
+  # All values that are not equal to given value.
+  isConfirmed_not: Boolean
+  isPaid: Boolean
+
+  # All values that are not equal to given value.
+  isPaid_not: Boolean
+  nights: Int
+
+  # All values that are not equal to given value.
+  nights_not: Int
+
+  # All values that are contained in given list.
+  nights_in: [Int!]
+
+  # All values that are not contained in given list.
+  nights_not_in: [Int!]
+
+  # All values less than the given value.
+  nights_lt: Int
+
+  # All values less than or equal the given value.
+  nights_lte: Int
+
+  # All values greater than the given value.
+  nights_gt: Int
+
+  # All values greater than or equal the given value.
+  nights_gte: Int
+  qty: Int
+
+  # All values that are not equal to given value.
+  qty_not: Int
+
+  # All values that are contained in given list.
+  qty_in: [Int!]
+
+  # All values that are not contained in given list.
+  qty_not_in: [Int!]
+
+  # All values less than the given value.
+  qty_lt: Int
+
+  # All values less than or equal the given value.
+  qty_lte: Int
+
+  # All values greater than the given value.
+  qty_gt: Int
+
+  # All values greater than or equal the given value.
+  qty_gte: Int
+  totalAmount: Int
+
+  # All values that are not equal to given value.
+  totalAmount_not: Int
+
+  # All values that are contained in given list.
+  totalAmount_in: [Int!]
+
+  # All values that are not contained in given list.
+  totalAmount_not_in: [Int!]
+
+  # All values less than the given value.
+  totalAmount_lt: Int
+
+  # All values less than or equal the given value.
+  totalAmount_lte: Int
+
+  # All values greater than the given value.
+  totalAmount_gt: Int
+
+  # All values greater than or equal the given value.
+  totalAmount_gte: Int
+  updatedAt: DateTime
+
+  # All values that are not equal to given value.
+  updatedAt_not: DateTime
+
+  # All values that are contained in given list.
+  updatedAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  updatedAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  updatedAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  updatedAt_lte: DateTime
+
+  # All values greater than the given value.
+  updatedAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  updatedAt_gte: DateTime
+  hotel: HotelFilter
+  user: UserFilter
+}

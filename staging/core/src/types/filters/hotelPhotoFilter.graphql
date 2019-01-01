@@ -1,0 +1,264 @@
+input HotelPhotoFilter {
+  # Logical AND on all given filters.
+  AND: [HotelPhotoFilter!]
+
+  # Logical OR on all given filters.
+  OR: [HotelPhotoFilter!]
+  cdnUrl: String
+
+  # All values that are not equal to given value.
+  cdnUrl_not: String
+
+  # All values that are contained in given list.
+  cdnUrl_in: [String!]
+
+  # All values that are not contained in given list.
+  cdnUrl_not_in: [String!]
+
+  # All values less than the given value.
+  cdnUrl_lt: String
+
+  # All values less than or equal the given value.
+  cdnUrl_lte: String
+
+  # All values greater than the given value.
+  cdnUrl_gt: String
+
+  # All values greater than or equal the given value.
+  cdnUrl_gte: String
+
+  # All values containing the given string.
+  cdnUrl_contains: String
+
+  # All values not containing the given string.
+  cdnUrl_not_contains: String
+
+  # All values starting with the given string.
+  cdnUrl_starts_with: String
+
+  # All values not starting with the given string.
+  cdnUrl_not_starts_with: String
+
+  # All values ending with the given string.
+  cdnUrl_ends_with: String
+
+  # All values not ending with the given string.
+  cdnUrl_not_ends_with: String
+  count: Int
+
+  # All values that are not equal to given value.
+  count_not: Int
+
+  # All values that are contained in given list.
+  count_in: [Int!]
+
+  # All values that are not contained in given list.
+  count_not_in: [Int!]
+
+  # All values less than the given value.
+  count_lt: Int
+
+  # All values less than or equal the given value.
+  count_lte: Int
+
+  # All values greater than the given value.
+  count_gt: Int
+
+  # All values greater than or equal the given value.
+  count_gte: Int
+  createdAt: DateTime
+
+  # All values that are not equal to given value.
+  createdAt_not: DateTime
+
+  # All values that are contained in given list.
+  createdAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  createdAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  createdAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  createdAt_lte: DateTime
+
+  # All values greater than the given value.
+  createdAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  createdAt_gte: DateTime
+  id: ID
+
+  # All values that are not equal to given value.
+  id_not: ID
+
+  # All values that are contained in given list.
+  id_in: [ID!]
+
+  # All values that are not contained in given list.
+  id_not_in: [ID!]
+
+  # All values less than the given value.
+  id_lt: ID
+
+  # All values less than or equal the given value.
+  id_lte: ID
+
+  # All values greater than the given value.
+  id_gt: ID
+
+  # All values greater than or equal the given value.
+  id_gte: ID
+
+  # All values containing the given string.
+  id_contains: ID
+
+  # All values not containing the given string.
+  id_not_contains: ID
+
+  # All values starting with the given string.
+  id_starts_with: ID
+
+  # All values not starting with the given string.
+  id_not_starts_with: ID
+
+  # All values ending with the given string.
+  id_ends_with: ID
+
+  # All values not ending with the given string.
+  id_not_ends_with: ID
+  isImage: Boolean
+
+  # All values that are not equal to given value.
+  isImage_not: Boolean
+  isStored: Boolean
+
+  # All values that are not equal to given value.
+  isStored_not: Boolean
+  name: String
+
+  # All values that are not equal to given value.
+  name_not: String
+
+  # All values that are contained in given list.
+  name_in: [String!]
+
+  # All values that are not contained in given list.
+  name_not_in: [String!]
+
+  # All values less than the given value.
+  name_lt: String
+
+  # All values less than or equal the given value.
+  name_lte: String
+
+  # All values greater than the given value.
+  name_gt: String
+
+  # All values greater than or equal the given value.
+  name_gte: String
+
+  # All values containing the given string.
+  name_contains: String
+
+  # All values not containing the given string.
+  name_not_contains: String
+
+  # All values starting with the given string.
+  name_starts_with: String
+
+  # All values not starting with the given string.
+  name_not_starts_with: String
+
+  # All values ending with the given string.
+  name_ends_with: String
+
+  # All values not ending with the given string.
+  name_not_ends_with: String
+  size: Int
+
+  # All values that are not equal to given value.
+  size_not: Int
+
+  # All values that are contained in given list.
+  size_in: [Int!]
+
+  # All values that are not contained in given list.
+  size_not_in: [Int!]
+
+  # All values less than the given value.
+  size_lt: Int
+
+  # All values less than or equal the given value.
+  size_lte: Int
+
+  # All values greater than the given value.
+  size_gt: Int
+
+  # All values greater than or equal the given value.
+  size_gte: Int
+  updatedAt: DateTime
+
+  # All values that are not equal to given value.
+  updatedAt_not: DateTime
+
+  # All values that are contained in given list.
+  updatedAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  updatedAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  updatedAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  updatedAt_lte: DateTime
+
+  # All values greater than the given value.
+  updatedAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  updatedAt_gte: DateTime
+  uuid: String
+
+  # All values that are not equal to given value.
+  uuid_not: String
+
+  # All values that are contained in given list.
+  uuid_in: [String!]
+
+  # All values that are not contained in given list.
+  uuid_not_in: [String!]
+
+  # All values less than the given value.
+  uuid_lt: String
+
+  # All values less than or equal the given value.
+  uuid_lte: String
+
+  # All values greater than the given value.
+  uuid_gt: String
+
+  # All values greater than or equal the given value.
+  uuid_gte: String
+
+  # All values containing the given string.
+  uuid_contains: String
+
+  # All values not containing the given string.
+  uuid_not_contains: String
+
+  # All values starting with the given string.
+  uuid_starts_with: String
+
+  # All values not starting with the given string.
+  uuid_not_starts_with: String
+
+  # All values ending with the given string.
+  uuid_ends_with: String
+
+  # All values not ending with the given string.
+  uuid_not_ends_with: String
+  hotel: HotelFilter
+}

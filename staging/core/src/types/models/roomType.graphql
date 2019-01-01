@@ -1,0 +1,43 @@
+type Room implements Node {
+  id: ID!
+  name: String!
+  roomType: ROOM_TYPE
+  price: Float
+  people: Int
+
+  photos: [RoomPhoto!]!
+  hotel: Hotel!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allRooms(
+    filter: RoomFilter,
+    orderBy: RoomOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [Room!]!
+
+  Room(id: ID): Room
+
+  _allRoomsMeta(
+    filter: RoomFilter,
+    orderBy: RoomOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createRoom(input: CreateRoomInput!): CreateRoomPayload
+  updateRoom(input: UpdateRoomInput!): UpdateRoomPayload
+  deleteRoom(input: DeleteRoomInput!): DeleteRoomPayload
+}

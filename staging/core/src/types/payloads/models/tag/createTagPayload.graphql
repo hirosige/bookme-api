@@ -1,0 +1,9 @@
+type CreateTagPayload {
+  id: ID!
+  name: String!
+  color: String!
+
+  posts: [Post!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

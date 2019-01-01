@@ -1,0 +1,22 @@
+enum BookingOrderBy {
+  checkIn_ASC
+  checkIn_DESC
+  checkOut_ASC
+  checkOut_DESC
+  createdAt_ASC
+  createdAt_DESC
+  id_ASC
+  id_DESC
+  isConfirmed_ASC
+  isConfirmed_DESC
+  isPaid_ASC
+  isPaid_DESC
+  nights_ASC
+  nights_DESC
+  qty_ASC
+  qty_DESC
+  totalAmount_ASC
+  totalAmount_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+}

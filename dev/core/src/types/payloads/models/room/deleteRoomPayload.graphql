@@ -1,0 +1,12 @@
+type DeleteRoomPayload {
+  id: ID!
+  name: String!
+  roomType: ROOM_TYPE
+  price: Float
+  people: Int
+
+  photos: [RoomPhoto!]!
+  hotel: Hotel!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

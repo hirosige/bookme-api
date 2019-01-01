@@ -1,0 +1,41 @@
+type Review implements Node {
+  id: ID!
+  rating: Float!
+  description: String!
+
+  hotel: Hotel!
+  user: User!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allReviews(
+    filter: ReviewFilter,
+    orderBy: ReviewOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [Review!]!
+
+  Review(id: ID): Review
+
+  _allReviewsMeta(
+    filter: ReviewFilter,
+    orderBy: ReviewOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createReview(input: CreateReviewInput!): CreateReviewPayload
+  updateReview(input: UpdateReviewInput!): UpdateReviewPayload
+  deleteReview(input: DeleteReviewInput!): DeleteReviewPayload
+}

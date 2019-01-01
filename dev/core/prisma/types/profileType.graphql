@@ -1,0 +1,14 @@
+type Profile {
+  id: ID! @unique
+  firstName: String
+  lastName: String
+  passportNo: String!
+  address: String
+  tel: String
+  subscriptionEmail: String
+
+  user: User!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

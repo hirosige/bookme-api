@@ -1,0 +1,9 @@
+input RoomphotosRoomPhoto {
+  cdnUrl: String!
+  isImage: Boolean!
+  isStored: Boolean!
+  mimeType: String!
+  name: String!
+  size: Int!
+  uuid: String!
+}

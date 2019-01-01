@@ -1,0 +1,6 @@
+input CreateFavoriteInput {
+  hotelsId: ID
+  hotels: FavoritehotelsHotel
+  userId: ID
+  user: FavoriteuserUser
+}

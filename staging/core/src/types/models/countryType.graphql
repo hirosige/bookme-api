@@ -1,0 +1,40 @@
+type Country implements Node {
+  id: ID!
+  name: String!
+  code: String!
+  slug: String!
+  areas: [Area!]!
+  hotels: [Hotel!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allCountries(
+    filter: CountryFilter,
+    orderBy: CountryOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [Country!]!
+
+  Country(code: String, id: ID, name: String, slug: String): Country
+
+  _allCountriesMeta(
+    filter: CountryFilter,
+    orderBy: CountryOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createCountry(input: CreateCountryInput!): CreateCountryPayload
+  updateCountry(input: UpdateCountryInput!): UpdateCountryPayload
+  deleteCountry(input: DeleteCountryInput!): DeleteCountryPayload
+}

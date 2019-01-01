@@ -1,0 +1,14 @@
+type UpdatePostHeroPayload {
+  id: ID!
+  name: String
+  cdnUrl: String
+  uuid: String
+  isImage: Boolean
+  isStored: Boolean
+  mimeType: String
+  size: Int
+
+  post: Post
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

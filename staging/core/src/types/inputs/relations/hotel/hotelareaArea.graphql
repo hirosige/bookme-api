@@ -1,0 +1,9 @@
+input HotelareaArea {
+  code: String!
+  name: String!
+  slug: String!
+  countryId: ID
+  country: AreacountryCountry
+  hotelsIds: [ID!]
+  hotels: [AreahotelsHotel!]
+}

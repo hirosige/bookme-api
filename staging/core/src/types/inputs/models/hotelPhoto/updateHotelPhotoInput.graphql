@@ -1,0 +1,12 @@
+input UpdateHotelPhotoInput {
+  cdnUrl: String
+  count: Int
+  id: ID!
+  isImage: Boolean
+  isStored: Boolean
+  name: String
+  size: Int
+  uuid: String
+  hotelId: ID
+  hotel: HotelPhotohotelHotel
+}

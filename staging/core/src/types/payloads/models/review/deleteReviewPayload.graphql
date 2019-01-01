@@ -1,0 +1,10 @@
+type DeleteReviewPayload {
+  id: ID!
+  rating: Float!
+  description: String!
+
+  hotel: Hotel!
+  user: User!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

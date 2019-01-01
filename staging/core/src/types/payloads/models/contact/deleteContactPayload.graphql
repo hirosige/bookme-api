@@ -1,0 +1,13 @@
+type DeleteContactPayload {
+  id: ID!
+  name: String!
+  email: String!
+  tel: String!
+  title: String!
+  reference: String
+  description: String!
+  isReplied: Boolean!
+  replyMessage: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

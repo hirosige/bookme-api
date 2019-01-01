@@ -1,0 +1,14 @@
+type Contact {
+  id: ID! @unique
+  name: String!
+  email: String!
+  tel: String!
+  title: String!
+  reference: String
+  description: String!
+  isReplied: Boolean! @default(value: "false")
+  replyMessage: String
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

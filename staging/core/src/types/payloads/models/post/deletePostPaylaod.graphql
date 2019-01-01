@@ -1,0 +1,14 @@
+type DeletePostPayload {
+  id: ID!
+  title: String!
+  mdContents: String!
+
+  author: User!
+  category: PostCategory
+  tags: [Tag!]!
+
+  hero: PostHero
+  photos: PostPhotos
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

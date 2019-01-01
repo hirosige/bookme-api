@@ -1,0 +1,40 @@
+type Tag implements Node {
+  id: ID!
+  name: String!
+  color: String!
+
+  posts: [Post!]!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allTags(
+    filter: TagFilter,
+    orderBy: TagOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [Tag!]!
+
+  Tag(id: ID, name: String): Tag
+
+  _allTagsMeta(
+    filter: TagFilter,
+    orderBy: TagOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createTag(input: CreateTagInput!): CreateTagPayload
+  updateTag(input: UpdateTagInput!): UpdateTagPayload
+  deleteTag(input: DeleteTagInput!): DeleteTagPayload
+}

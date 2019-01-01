@@ -1,0 +1,11 @@
+input CreatePostHeroInput {
+  cdnUrl: String
+  isImage: Boolean
+  isStored: Boolean
+  mimeType: String
+  name: String
+  size: Int
+  uuid: String
+  postId: ID
+  post: PostHeropostPost
+}

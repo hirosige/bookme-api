@@ -1,0 +1,3 @@
+input DeleteProfileInput {
+  id: ID!
+}

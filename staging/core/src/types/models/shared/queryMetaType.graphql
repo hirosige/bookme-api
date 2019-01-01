@@ -1,0 +1,3 @@
+type _QueryMeta {
+  count: Int!
+}

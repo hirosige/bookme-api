@@ -1,0 +1,46 @@
+type Booking implements Node {
+  id: ID!
+  isPaid: Boolean!
+  isConfirmed: Boolean!
+  checkIn: DateTime!
+  checkOut: DateTime!
+  qty: Int!
+  nights: Int!
+  totalAmount: Int!
+
+  hotel: Hotel!
+  user: User!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allBookings(
+    filter: BookingFilter,
+    orderBy: BookingOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [Booking]!
+
+  Booking(id: ID): Booking
+
+  _allBookingsMeta(
+    filter: BookingFilter,
+    orderBy: BookingOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createBooking(input: CreateBookingInput!): CreateBookingPayload
+  updateBooking(input: UpdateBookingInput!): UpdateBookingPayload
+  deleteBooking(input: DeleteBookingInput!): DeleteBookingPayload
+}

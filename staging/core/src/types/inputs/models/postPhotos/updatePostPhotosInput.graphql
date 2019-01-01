@@ -1,0 +1,12 @@
+input UpdatePostPhotosInput {
+  cdnUrl: String
+  count: Int
+  id: ID!
+  isImage: Boolean
+  isStored: Boolean
+  name: String
+  size: Int
+  uuid: String
+  postId: ID
+  post: PostPhotospostPost
+}

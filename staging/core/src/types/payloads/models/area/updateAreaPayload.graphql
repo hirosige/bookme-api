@@ -1,0 +1,10 @@
+type UpdateAreaPayload {
+  id: ID!
+  name: String!
+  code: String!
+  slug: String!
+  country: Country!
+  hotels: [Hotel!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

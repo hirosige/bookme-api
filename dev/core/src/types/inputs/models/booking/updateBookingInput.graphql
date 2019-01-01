@@ -1,0 +1,14 @@
+input UpdateBookingInput {
+  checkIn: DateTime
+  checkOut: DateTime
+  id: ID!
+  isConfirmed: Boolean
+  isPaid: Boolean
+  nights: Int
+  qty: Int
+  totalAmount: Int
+  hotelId: ID
+  hotel: BookinghotelHotel
+  userId: ID
+  user: BookinguserUser
+}

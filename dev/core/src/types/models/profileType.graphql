@@ -1,0 +1,44 @@
+type Profile implements Node {
+  id: ID!
+  firstName: String
+  lastName: String
+  passportNo: String!
+  address: String
+  tel: String
+  subscriptionEmail: String
+
+  user: User!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allProfiles(
+    filter: ProfileFilter,
+    orderBy: ProfileOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [Profile!]!
+
+  Profile(id: ID): Profile
+
+  _allProfilesMeta(
+    filter: ProfileFilter,
+    orderBy: ProfileOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createProfile(input: CreateProfileInput!): CreateProfilePayload
+  updateProfile(input: UpdateProfileInput!): UpdateProfilePayload
+  deleteProfile(input: DeleteProfileInput!): DeleteProfilePayload
+}

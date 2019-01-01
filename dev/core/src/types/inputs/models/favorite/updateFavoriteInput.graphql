@@ -1,0 +1,7 @@
+input UpdateFavoriteInput {
+  id: ID!
+  hotelsId: ID
+  hotels: FavoritehotelsHotel
+  userId: ID
+  user: FavoriteuserUser
+}

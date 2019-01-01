@@ -1,0 +1,10 @@
+type CreatePostCategoryPayload {
+  id: ID!
+  name: String!
+  isRoot: Boolean!
+
+  posts: [Post!]!
+  children: [PostCategory!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

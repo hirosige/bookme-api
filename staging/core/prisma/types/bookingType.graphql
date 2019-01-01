@@ -1,0 +1,16 @@
+type Booking {
+  id: ID! @unique
+  isPaid: Boolean! @default(value: "false")
+  isConfirmed: Boolean! @default(value: "false")
+  checkIn: DateTime!
+  checkOut: DateTime!
+  qty: Int!
+  nights: Int!
+  totalAmount: Int!
+
+  hotel: Hotel!
+  user: User!
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

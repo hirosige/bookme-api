@@ -1,0 +1,44 @@
+type PostPhotos implements Node {
+  id: ID!
+  name: String
+  cdnUrl: String
+  uuid: String
+  count: Int
+  isImage: Boolean
+  isStored: Boolean
+  size: Int
+  post: Post
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  allPostPhotoses(
+    filter: PostPhotosFilter,
+    orderBy: PostPhotosOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int
+  ): [PostPhotos!]!
+
+  PostPhotos(id: ID): PostPhotos
+
+  _allPostPhotosesMeta(
+    filter: PostPhotosFilter,
+    orderBy: PostPhotosOrderBy,
+    skip: Int,
+    after: String,
+    before: String,
+    first: Int,
+    last: Int,
+  ): _QueryMeta!
+}
+
+type Mutation {
+  createPostPhotos(input: CreatePostPhotosInput!): CreatePostPhotosPayload
+  updatePostPhotos(input: UpdatePostPhotosInput!): UpdatePostPhotosPayload
+  deletePostPhotos(input: DeletePostPhotosInput!): DeletePostPhotosPayload
+}

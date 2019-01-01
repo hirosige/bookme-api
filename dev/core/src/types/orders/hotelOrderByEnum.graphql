@@ -1,0 +1,26 @@
+enum HotelOrderBy {
+  address_ASC
+  address_DESC
+  appliances_ASC
+  appliances_DESC
+  createdAt_ASC
+  createdAt_DESC
+  email_ASC
+  email_DESC
+  fax_ASC
+  fax_DESC
+  id_ASC
+  id_DESC
+  isPublished_ASC
+  isPublished_DESC
+  latitude_ASC
+  latitude_DESC
+  longitude_ASC
+  longitude_DESC
+  name_ASC
+  name_DESC
+  tel_ASC
+  tel_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+}

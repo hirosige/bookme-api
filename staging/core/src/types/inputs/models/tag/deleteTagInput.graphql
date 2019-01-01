@@ -1,0 +1,3 @@
+input DeleteTagInput {
+  id: ID!
+}

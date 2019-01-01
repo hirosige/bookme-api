@@ -1,0 +1,9 @@
+input UpdateAdvantageInput {
+  iconName: String
+  id: ID!
+  name: String
+  iconId: ID
+  icon: AdvantageiconAdvantageIcon
+  hotelsIds: [ID!]
+  hotels: [AdvantagehotelsHotel!]
+}
