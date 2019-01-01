@@ -8,7 +8,7 @@ type DeleteUserPayload {
   avatar: UserPhoto
   posts: [Post!]!
   profile: Profile
-  favorites: [Favorite!]!
+  favorites: [Favorite!]
 
   bookings: [Booking!]!
   reviews: [Review!]!

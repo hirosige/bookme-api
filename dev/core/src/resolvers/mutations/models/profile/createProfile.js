@@ -12,8 +12,7 @@ const createProfile = async (parent, args, ctx, info) => {
     passportNo: args.input.passportNo,
     subscriptionEmail: args.input.subscriptionEmail,
     tel: args.input.tel,
-    userId: args.input.userId,
-    user: args.input.user,
+    user: { connect: { id: args.input.userId } },
   })
   .then(res => {
     return {
