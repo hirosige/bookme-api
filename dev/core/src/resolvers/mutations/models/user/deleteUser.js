@@ -7,7 +7,7 @@ const deleteUser = async (parent, args, ctx, info) => {
 
   const profile = await ctx.prisma.user({ id: args.input.id }).profile()
 
-  if (profile.id) {
+  if (profile) {
     await ctx.prisma.deleteProfile({
       id: profile.id
     })

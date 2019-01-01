@@ -5,6 +5,8 @@ const createAdvantage = async (parent, args, ctx, info) => {
   authorize(ctx)
   await validateCreateAdvantage(args.input, ctx)
 
+  console.log(args.input)
+
   return ctx.prisma.createAdvantage({
     iconName: args.input.iconName,
     name: args.input.name,

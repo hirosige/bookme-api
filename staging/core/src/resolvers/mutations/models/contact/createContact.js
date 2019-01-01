@@ -2,11 +2,11 @@ const { authorize } = require('../../../../utils/authService')
 const sendContactRecieved = require('../../../subscriptions/models/sendContactRecieved')
 const validateCreateContact = require('../../../validators/contact/validateCreateContact')
 
-const createContact = async (parent, args, context, info) => {
-  authorize(context)
+const createContact = async (parent, args, ctx, info) => {
+  authorize(ctx)
   await validateCreateContact(args.input, ctx)
 
-  return context.prisma.createContact({
+  return ctx.prisma.createContact({
     name: args.input.name,
     email: args.input.email,
     tel: args.input.tel,

@@ -3,7 +3,7 @@ type DeleteAdvantagePayload {
   name: String!
   iconName: String!
   icon: AdvantageIcon
-  hotels: [Hotel!]!
+  hotels: [Hotel!]
   createdAt: DateTime!
   updatedAt: DateTime!
 }

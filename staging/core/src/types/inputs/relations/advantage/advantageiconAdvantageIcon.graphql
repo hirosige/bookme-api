@@ -1,9 +1,9 @@
 input AdvantageiconAdvantageIcon {
-  cdnUrl: String!
-  isImage: Boolean!
-  isStored: Boolean!
-  mimeType: String!
-  name: String!
-  size: Int!
-  uuid: String!
+  cdnUrl: String
+  isImage: Boolean
+  isStored: Boolean
+  mimeType: String
+  name: String
+  size: Int
+  uuid: String
 }
