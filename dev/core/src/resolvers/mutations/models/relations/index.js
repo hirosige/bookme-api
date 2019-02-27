@@ -1,4 +1,5 @@
-// const createCountry = require('./createCountry')
+const addToChildren = require('./addToChildren')
 
 module.exports = {
+  addToChildren
 }

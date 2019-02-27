@@ -1,0 +1,4 @@
+input AddToChildrenPostCategoryInput {
+  children1PostCategoryId: ID!
+  children2PostCategoryId: ID!
+}

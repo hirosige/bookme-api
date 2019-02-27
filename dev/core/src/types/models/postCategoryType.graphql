@@ -38,4 +38,5 @@ type Mutation {
   createPostCategory(input: CreatePostCategoryInput!): CreatePostCategoryPayload
   updatePostCategory(input: UpdatePostCategoryInput!): UpdatePostCategoryPayload
   deletePostCategory(input: DeletePostCategoryInput!): DeletePostCategoryPayload
+  addToChildren(input: AddToChildrenPostCategoryInput!): AddToChildrenPayload
 }

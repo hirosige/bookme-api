@@ -13,6 +13,7 @@ const postCategoryModules = require('./postCategory')
 const postHeroModules = require('./postHero')
 const postPhotosModules = require('./postPhotos')
 const profileModules = require('./profile')
+const relationModules = require('./relations')
 const reviewModules = require('./review')
 const roomModules = require('./room')
 const roomPhotoModules = require('./roomPhoto')
@@ -36,6 +37,7 @@ module.exports = {
   ...postHeroModules,
   ...postPhotosModules,
   ...profileModules,
+  ...relationModules,
   ...reviewModules,
   ...roomModules,
   ...roomPhotoModules,
